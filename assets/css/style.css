@@ -22,8 +22,9 @@ body {
   font-size: 16px;
   line-height: 1.6;
   overflow-x: hidden;
-  cursor: none;
+  cursor: auto;
 }
+html.has-mouse body { cursor: none; }
 
 body::before {
   content: '';
@@ -39,12 +40,15 @@ section { position: relative; z-index: 1; }
 
 /* ───────────────────────────── CURSOR ───────────────────────────── */
 #cursor-dot, #cursor-ring {
+  display: none;
   position: fixed; top: 0; left: 0;
   pointer-events: none; z-index: 9999;
   transform: translate(-50%, -50%);
   border-radius: 50%;
   transition: opacity .3s;
 }
+html.has-mouse #cursor-dot { display: block; }
+html.has-mouse #cursor-ring { display: block; }
 #cursor-dot {
   width: 6px; height: 6px;
   background: var(--accent);
@@ -54,14 +58,10 @@ section { position: relative; z-index: 1; }
   border: 1.5px solid rgba(184,255,60,.5);
   transition: width .25s, height .25s, border-color .25s;
 }
-body:has(a:hover) #cursor-ring,
-body:has(button:hover) #cursor-ring {
+html.has-mouse body:has(a:hover) #cursor-ring,
+html.has-mouse body:has(button:hover) #cursor-ring {
   width: 54px; height: 54px;
   border-color: var(--accent);
-}
-@media (hover: none), (pointer: coarse) {
-  #cursor-dot, #cursor-ring { display: none; }
-  body { cursor: auto; }
 }
 
 /* ───────────────────────────── HEADER ───────────────────────────── */
