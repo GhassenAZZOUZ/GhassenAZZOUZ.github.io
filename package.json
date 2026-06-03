@@ -1,0 +1,12 @@
+{
+  "name": "ghassen-azouz-portfolio",
+  "version": "1.0.0",
+  "description": "Portfolio website — Ghassen Azouz, QA Automation Engineer",
+  "scripts": {
+    "dev": "npx serve . --listen 3000 --no-clipboard",
+    "start": "npx serve . --listen 3000"
+  },
+  "devDependencies": {
+    "serve": "^14.2.3"
+  }
+}
