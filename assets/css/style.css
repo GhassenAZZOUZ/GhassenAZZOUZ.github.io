@@ -607,8 +607,9 @@ footer {
   #projects { padding: 80px 32px; }
   .project-row { grid-template-columns: 56px 1fr auto; }
   .project-cat { display: none; }
-  .project-expand-inner { grid-template-columns: 1fr; padding-left: 88px; }
-  .project-expand-img { max-width: 280px; }
+  .project-expand-inner { grid-template-columns: 1fr; padding-left: 56px; }
+  .project-expand-img { max-width: 220px; }
+  .project-item.open .project-expand { max-height: 600px; }
 
   #about { padding: 80px 32px; }
   .about-portrait { max-width: 240px; }
@@ -629,7 +630,9 @@ footer {
 
   #projects { padding: 60px 20px; }
   .project-row { grid-template-columns: 44px 1fr 40px; gap: 16px; }
-  .project-expand-inner { padding-left: 60px; }
+  .project-expand-inner { padding-left: 0; }
+  .project-expand-img { display: none; }
+  .project-item.open .project-expand { max-height: 500px; }
 
   #about { padding: 60px 20px; }
   .about-stats { flex-direction: column; gap: 28px; }
