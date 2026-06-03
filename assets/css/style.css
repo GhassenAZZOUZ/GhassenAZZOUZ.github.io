@@ -59,7 +59,7 @@ body:has(button:hover) #cursor-ring {
   width: 54px; height: 54px;
   border-color: var(--accent);
 }
-@media (hover: none) {
+@media (hover: none), (pointer: coarse) {
   #cursor-dot, #cursor-ring { display: none; }
   body { cursor: auto; }
 }
@@ -391,11 +391,32 @@ nav a:hover { color: var(--text); }
   display: flex; align-items: center; gap: 10px;
   transition: color .2s, background .2s;
 }
+.skill-category {
+  grid-column: 1 / -1;
+  padding: 10px 20px 8px;
+  font-size: .62rem; font-weight: 600;
+  letter-spacing: .2em; text-transform: uppercase;
+  color: var(--accent);
+  background: rgba(184,255,60,.04);
+  border-top: 1px solid var(--border);
+}
+.skill-category:first-child { border-top: none; }
 .skill-cell:hover { background: var(--bg); color: var(--text); }
 .skill-dot {
   width: 5px; height: 5px; border-radius: 50%;
   background: var(--accent); flex-shrink: 0;
 }
+.skill-stars {
+  display: flex; gap: 3px;
+  margin-left: auto; flex-shrink: 0;
+}
+.skill-star {
+  font-size: .55rem; line-height: 1;
+  color: rgba(240,238,232,.15);
+  transition: color .2s;
+}
+.skill-star.filled { color: var(--accent); }
+.skill-cell:hover .skill-star.filled { color: var(--text); }
 
 .about-stats {
   display: flex; gap: 48px;
