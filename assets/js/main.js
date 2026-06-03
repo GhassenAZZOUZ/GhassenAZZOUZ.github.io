@@ -70,6 +70,20 @@ document.querySelectorAll('.skill-cell[data-level]').forEach(cell => {
   cell.appendChild(wrap);
 });
 
+/* ─── DYNAMIC SECTION COUNTS ─── */
+[
+  { section: '#projects', items: '.project-item',  label: n => `${n} project${n !== 1 ? 's' : ''}` },
+  { section: '#content',  items: 'article.content-card', label: n => `${n} article${n !== 1 ? 's' : ''}` },
+].forEach(({ section, items, label }) => {
+  const sec   = document.querySelector(section);
+  if (!sec) return;
+  const count = sec.querySelectorAll(items).length;
+  const el    = sec.querySelector('.section-count');
+  if (!el) return;
+  el.textContent  = `(${String(count).padStart(2, '0')})`;
+  el.setAttribute('aria-label', label(count));
+});
+
 /* ─── PROJECT ROW EXPAND ─── */
 document.querySelectorAll('.project-item').forEach(item => {
   item.querySelector('.project-row').addEventListener('click', () => {

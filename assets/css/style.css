@@ -321,7 +321,7 @@ nav a:hover { color: var(--text); }
   display: flex; flex-wrap: wrap; gap: 8px;
   margin-top: 20px;
 }
-.project-tags .tag { font-size: .68rem; padding: 4px 12px; }
+.project-tags .tag { font-size: .68rem; padding: 4px 12px; font-weight: 700; color: var(--text); }
 
 .project-item.open .project-row { padding: 40px 0 16px; }
 .project-item.open .project-name { color: var(--accent); }
