@@ -537,9 +537,19 @@ footer {
   header.scrolled { padding: 14px 32px; }
   nav { gap: 24px; }
 
-  #hero { grid-template-columns: 1fr; }
-  .hero-right { display: none; }
-  .hero-left { padding: 120px 32px 80px; justify-content: flex-end; }
+  #hero { grid-template-columns: 1fr; position: relative; }
+  .hero-right {
+    display: block;
+    position: absolute; inset: 0;
+    z-index: 0;
+  }
+  .hero-right::after {
+    background:
+      linear-gradient(to bottom, rgba(8,8,14,.55) 0%, transparent 35%),
+      linear-gradient(to top,    var(--bg) 0%,        transparent 55%),
+      linear-gradient(to right,  rgba(8,8,14,.6) 0%,  transparent 100%);
+  }
+  .hero-left { padding: 120px 32px 80px; justify-content: flex-end; position: relative; z-index: 2; }
 
   #projects { padding: 80px 32px; }
   .project-row { grid-template-columns: 56px 1fr auto; }
