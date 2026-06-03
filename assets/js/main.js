@@ -70,6 +70,10 @@ document.querySelectorAll('.skill-cell[data-level]').forEach(cell => {
   cell.appendChild(wrap);
 });
 
+/* ─── TICKER: auto-clone for seamless loop ─── */
+const tickerTrack = document.querySelector('.ticker-track');
+if (tickerTrack) tickerTrack.innerHTML += tickerTrack.innerHTML;
+
 /* ─── DYNAMIC SECTION COUNTS ─── */
 [
   { section: '#projects', items: '.project-item',  label: n => `${n} project${n !== 1 ? 's' : ''}` },
