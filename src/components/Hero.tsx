@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from 'react'
 
-const tags = ['Playwright', 'BDD / Cucumber', 'CI/CD', 'TypeScript', 'ISTQB Certified', '5+ yrs exp.']
+const tags = ['Playwright', 'TypeScript', 'BDD / Cucumber', 'CI/CD', 'ISTQB Certified', 'Agility', '5+ yrs exp.']
 
 export default function Hero() {
   const [visible, setVisible] = useState(false)

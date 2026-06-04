@@ -1,10 +1,9 @@
 const items = [
-  { value: '5',     label: 'Years Experience' },
+  { value: '5+',     label: 'Years Experience' },
   { value: '3',     label: 'Industries' },
   { value: '44%',   label: 'Pipeline Time Saved' },
   { value: 'ISTQB', label: 'Certified' },
   { value: '1200+', label: 'API Tests Automated' },
-  { value: '4',     label: 'Parallel Agents' },
 ]
 
 export default function Ticker() {

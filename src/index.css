@@ -203,7 +203,7 @@ nav a:hover { color: var(--text); }
   display: flex; gap: 0;
   white-space: nowrap;
   width: max-content;
-  animation: ticker 28s linear infinite;
+  animation: ticker 60s linear infinite;
   will-change: transform;
 }
 .ticker-track:hover { animation-play-state: paused; }
