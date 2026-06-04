@@ -315,7 +315,7 @@ nav a:hover { color: var(--text); }
 }
 .project-expand-text p {
   font-size: .9rem; color: var(--muted); line-height: 1.8;
-  max-width: 480px;
+  max-width: 480px; text-align: justify;
 }
 .project-tags {
   display: flex; flex-wrap: wrap; gap: 8px;

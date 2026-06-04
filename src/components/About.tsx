@@ -34,7 +34,7 @@ export default function About() {
                 <div key={skill.name} className="skill-cell" data-level={skill.level}>
                   <span className="skill-dot" aria-hidden="true" />
                   {skill.name}
-                  <SkillStars level={skill.level} />
+                  {/* <SkillStars level={skill.level} /> */}
                 </div>
               ))}
             </Fragment>
