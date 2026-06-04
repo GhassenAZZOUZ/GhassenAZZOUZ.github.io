@@ -40,7 +40,7 @@ export default function Hero() {
         <div className="hero-number">QA</div>
         <img
           ref={imgRef}
-          src="/images/hero.png"
+          src={`${import.meta.env.BASE_URL}images/hero.png`}
           alt="Ghassen Azouz"
           onError={e => {
             const img = e.target as HTMLImageElement

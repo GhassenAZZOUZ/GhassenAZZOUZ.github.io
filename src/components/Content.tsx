@@ -1,14 +1,14 @@
 const articles = [
   {
     id: 'cicd',
-    image: '/images/card1.png',
+    image: `${import.meta.env.BASE_URL}images/card1.png`,
     imageFallback: 'https://picsum.photos/seed/card1/700/875',
     label: 'CI/CD Insights',
     title: 'How I cut pipeline execution time in half',
   },
   {
     id: 'bdd',
-    image: '/images/card2.png',
+    image: `${import.meta.env.BASE_URL}images/card2.png`,
     imageFallback: 'https://picsum.photos/seed/card2/700/875',
     label: 'QA Strategy',
     title: 'BDD in the real world — lessons from retail',

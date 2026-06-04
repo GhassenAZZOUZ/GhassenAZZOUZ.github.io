@@ -60,7 +60,7 @@ export default function Contact() {
         >
           LinkedIn
         </a>
-        <a href="/cv.pdf" download className="contact-link">Download CV</a>
+        <a href={`${import.meta.env.BASE_URL}cv.pdf`} download className="contact-link">Download CV</a>
       </div>
     </section>
   )
