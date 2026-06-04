@@ -37,7 +37,7 @@ export default function App() {
         <Ticker />
         <Projects />
         <About />
-        <Content />
+        {/* <Content /> */}
         <Contact />
       </main>
       <Footer />

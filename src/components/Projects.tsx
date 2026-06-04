@@ -24,7 +24,7 @@ export default function Projects() {
         {projects.map(p => {
           const isOpen = openId === p.id
           return (
-            <li key={p.id} className={`project-item reveal${isOpen ? ' open' : ''}`}>
+            <li key={p.id} className="project-item reveal" data-open={isOpen || undefined}>
               <div
                 className="project-row"
                 role="button"

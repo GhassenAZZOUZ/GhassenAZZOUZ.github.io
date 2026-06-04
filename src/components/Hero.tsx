@@ -23,7 +23,7 @@ export default function Hero() {
   return (
     <section id="hero" aria-label="Introduction">
       <div className="hero-left">
-        <p className="hero-eyebrow">Available · Paris, France · Freelance</p>
+        <p className="hero-eyebrow">Available · Paris, France · Freelance · Portage Salarial</p>
         <h1 className="hero-name">
           <div className="line"><span className={`word${visible ? ' visible' : ''}`}>Ghassen</span></div>
           <div className="line"><span className={`word${visible ? ' visible' : ''}`}>Azouz</span></div>

@@ -35,9 +35,9 @@ export default function Contact() {
     <section id="contact" aria-labelledby="contact-title">
       <p className="contact-eyebrow reveal">Open to opportunities</p>
       <h2 id="contact-title" className="contact-headline reveal">
-        Let's build<br />
-        <em>quality</em><br />
-        together.
+        If quality<br />
+        is <em>expensive,</em><br />
+        try bugs.
       </h2>
       <a
         ref={btnRef}

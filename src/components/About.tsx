@@ -22,8 +22,8 @@ export default function About() {
       <div className="about-content">
         <h2 id="about-title" className="about-headline reveal">
           QA Engineer.<br />
-          <em>By Precision.</em><br />
-          By Craft.
+          I break things<br />
+          <em>before your users do.</em>
         </h2>
 
         <div className="skills-grid reveal" aria-label="Technical skills">
@@ -52,7 +52,7 @@ export default function About() {
           </div>
           <div>
             <div className="stat-num">44<span>%</span></div>
-            <div className="stat-label">Pipeline Time Saved</div>
+            <div className="stat-label">Pipeline faster — 40 min/run, 3× a day</div>
           </div>
           <div>
             <div className="stat-num">3</div>
@@ -76,6 +76,15 @@ export default function About() {
             ))}
           </div>
         </div>
+        <div className="not-doing reveal">
+          <p className="section-label" style={{ marginBottom: '16px' }}>What I don't do</p>
+          <ul>
+            <li>Decorative QA. If the tests have no business value, I say so.</li>
+            <li>Claim to master what I know at 30%.</li>
+            <li>Sell automation as the answer before understanding the problem.</li>
+          </ul>
+        </div>
+
       </div>
     </section>
   )
