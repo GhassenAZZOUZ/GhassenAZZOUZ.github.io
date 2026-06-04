@@ -2,11 +2,21 @@
   "name": "ghassen-azouz-portfolio",
   "version": "1.0.0",
   "description": "Portfolio website — Ghassen Azouz, QA Automation Engineer",
+  "type": "module",
   "scripts": {
-    "dev": "npx serve . --listen 3000 --no-clipboard",
-    "start": "npx serve . --listen 3000"
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
   },
   "devDependencies": {
-    "serve": "^14.2.3"
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "@vitejs/plugin-react": "^4.3.0",
+    "typescript": "~5.6.2",
+    "vite": "^6.0.0"
   }
 }

@@ -323,11 +323,11 @@ nav a:hover { color: var(--text); }
 }
 .project-tags .tag { font-size: .68rem; padding: 4px 12px; font-weight: 700; color: var(--text); }
 
-.project-item.open .project-row { padding: 40px 0 16px; }
-.project-item.open .project-name { color: var(--accent); }
-.project-item.open .project-arrow { border-color: var(--accent); color: var(--accent); transform: rotate(45deg); }
-.project-item.open .project-expand { max-height: 400px; }
-.project-item.open .project-expand-img { clip-path: inset(0% 0 0 0); }
+.project-item[data-open] .project-row { padding: 40px 0 16px; }
+.project-item[data-open] .project-name { color: var(--accent); }
+.project-item[data-open] .project-arrow { border-color: var(--accent); color: var(--accent); transform: rotate(45deg); }
+.project-item[data-open] .project-expand { max-height: 400px; }
+.project-item[data-open] .project-expand-img { clip-path: inset(0% 0 0 0); }
 
 /* ───────────────────────────── ABOUT ───────────────────────────── */
 #about {
@@ -609,7 +609,7 @@ footer {
   .project-cat { display: none; }
   .project-expand-inner { grid-template-columns: 1fr; padding-left: 56px; }
   .project-expand-img { max-width: 220px; }
-  .project-item.open .project-expand { max-height: 600px; }
+  .project-item[data-open] .project-expand { max-height: 600px; }
 
   #about { padding: 80px 32px; }
   .about-portrait { max-width: 240px; }
@@ -632,7 +632,7 @@ footer {
   .project-row { grid-template-columns: 44px 1fr 40px; gap: 16px; }
   .project-expand-inner { padding-left: 0; }
   .project-expand-img { display: none; }
-  .project-item.open .project-expand { max-height: 500px; }
+  .project-item[data-open] .project-expand { max-height: 500px; }
 
   #about { padding: 60px 20px; }
   .about-stats { flex-direction: column; gap: 28px; }
@@ -645,6 +645,28 @@ footer {
   .contact-links { flex-direction: column; gap: 24px; align-items: center; }
 
   footer { padding: 20px; flex-direction: column; gap: 12px; text-align: center; }
+}
+
+/* ───────────────────────────── NOT-DOING ───────────────────────────── */
+.not-doing { margin-top: 48px; text-align: left; }
+.not-doing ul { list-style: none; margin-top: 16px; display: flex; flex-direction: column; gap: 12px; }
+.not-doing li {
+  font-size: .85rem; color: var(--muted);
+  padding-left: 20px; position: relative;
+  transition: color .2s;
+}
+.not-doing li::before {
+  content: '—'; position: absolute; left: 0;
+  color: var(--accent);
+}
+.not-doing li:hover { color: var(--text); }
+
+/* ───────────────────────────── PROJECT OPINION ───────────────────────────── */
+.project-expand-text p em {
+  display: block; margin-top: 12px;
+  font-style: italic; color: var(--accent);
+  font-size: .85rem; line-height: 1.7;
+  opacity: .85;
 }
 
 /* ───────────────────────────── REDUCED MOTION ───────────────────────────── */
