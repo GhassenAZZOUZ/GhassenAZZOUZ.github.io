@@ -3,5 +3,5 @@ import react from '@vitejs/plugin-react'
 
 export default defineConfig({
   plugins: [react()],
-  base: process.env.BASE_PATH ?? '/monportfolio/',
+  base: process.env.VERCEL ? '/' : (process.env.BASE_PATH ?? '/monportfolio/'),
 })
