@@ -53,7 +53,15 @@ export default function Projects() {
                   </div>
                   <div className="project-expand-text">
                     <h4>{p.title}</h4>
-                    <p dangerouslySetInnerHTML={{ __html: p.descriptionHtml }} />
+                    <div className="case-study">
+                      {p.blocks.map(block => (
+                        <div key={block.label} className="case-block">
+                          <span className="case-label">{block.label}</span>
+                          <span className="case-text">{block.text}</span>
+                        </div>
+                      ))}
+                    </div>
+                    {p.opinion && <em className="project-opinion">{p.opinion}</em>}
                     <div className="project-tags">
                       {p.tags.map(tag => <span key={tag} className="tag">{tag}</span>)}
                     </div>
