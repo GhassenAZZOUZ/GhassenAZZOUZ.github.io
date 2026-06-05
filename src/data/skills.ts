@@ -19,7 +19,9 @@ export const skillCategories: SkillCategory[] = [
   {
     category: 'API & Performance',
     skills: [
-      { name: 'Karate (API Testing)', level: 4 },
+      { name: 'Karate (API Automation Testing)', level: 4 },
+      { name: 'Postman (API Testing)', level:4 },
+      { name: 'Swagger (API documentation)', level:4 },
       { name: 'Gatling (Performance)', level: 2 },
     ],
   },
@@ -45,6 +47,7 @@ export const skillCategories: SkillCategory[] = [
       { name: 'Jira / Xray', level: 4 },
       { name: 'Java / Bash', level: 3 },
       { name: 'TypeScript', level: 4 },
+      { name: 'SQL - PL/SQL', level: 4 },
     ],
   },
 ]
