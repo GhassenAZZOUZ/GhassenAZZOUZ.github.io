@@ -12,8 +12,9 @@ function SkillStars({ level }: { level: number }) {
 }
 
 const languages = [
-  { name: 'French',  level: 'C1', width: '85%' },
-  { name: 'English', level: 'C1', width: '85%' },
+  { name: 'French',  level: 'C1',     width: '85%'  },
+  { name: 'English', level: 'C1',     width: '85%'  },
+  { name: 'Arabic',  level: 'Native', width: '100%' },
 ]
 
 export default function About() {
@@ -25,6 +26,13 @@ export default function About() {
           I break things<br />
           <em>before your users do.</em>
         </h2>
+
+        <p className="about-bio reveal">
+          Started in QA by accident, stayed by conviction. Five years across banking, retail,
+          and gaming taught me that automation without strategy is just expensive maintenance.
+          I build test infrastructure the same way I'd build product: with clear ownership,
+          measurable outcomes, and zero tolerance for tests that pass but don't protect.
+        </p>
 
         <div className="skills-grid reveal" aria-label="Technical skills">
           {skillCategories.map(cat => (

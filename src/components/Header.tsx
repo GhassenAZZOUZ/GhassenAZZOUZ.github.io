@@ -15,7 +15,6 @@ export default function Header() {
       <nav aria-label="Primary navigation">
         <a href="#projects">Work</a>
         <a href="#about">About</a>
-        <a href="#content">Content</a>
         <a href="#contact">Contact</a>
       </nav>
     </header>

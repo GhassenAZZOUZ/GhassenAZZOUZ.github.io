@@ -8,6 +8,7 @@ export interface Project {
   title: string
   descriptionHtml: string
   tags: string[]
+  githubUrl?: string
 }
 
 export const projects: Project[] = [
@@ -54,5 +55,6 @@ export const projects: Project[] = [
     title: 'Playwright BDD Starter Framework — Open Source (ongoing)',
     descriptionHtml: `Born out of frustration: I couldn't find a serious Playwright + BDD starter for production use. So I built one. It's not a portfolio piece — I use it as the base for client projects and keep updating it as the ecosystem evolves. No metrics here, just something I maintain because I think it's useful.`,
     tags: ['Playwright', 'TypeScript', 'Cucumber', 'GitHub Actions', 'Page Object Model'],
+    githubUrl: 'https://github.com/GhassenAZZOUZ/PlaywrightBDD-framework',
   },
 ]

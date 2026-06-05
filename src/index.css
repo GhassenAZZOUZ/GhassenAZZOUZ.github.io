@@ -647,6 +647,30 @@ footer {
   footer { padding: 20px; flex-direction: column; gap: 12px; text-align: center; }
 }
 
+/* ───────────────────────────── ABOUT BIO ───────────────────────────── */
+.about-bio {
+  font-size: .95rem; color: var(--muted); line-height: 1.9;
+  max-width: 640px; margin: 0 auto 48px; text-align: center;
+}
+
+/* ───────────────────────────── PROJECT GITHUB LINK ───────────────────────────── */
+.project-github-link {
+  display: inline-flex; align-items: center; gap: 8px;
+  margin-top: 20px;
+  font-size: .75rem; font-weight: 600;
+  letter-spacing: .1em; text-transform: uppercase;
+  color: var(--accent);
+  position: relative; padding-bottom: 3px;
+  transition: opacity .2s;
+}
+.project-github-link::after {
+  content: '';
+  position: absolute; bottom: 0; left: 0;
+  width: 0; height: 1px; background: var(--accent);
+  transition: width .3s;
+}
+.project-github-link:hover::after { width: 100%; }
+
 /* ───────────────────────────── NOT-DOING ───────────────────────────── */
 .not-doing { margin-top: 48px; text-align: left; }
 .not-doing ul { list-style: none; margin-top: 16px; display: flex; flex-direction: column; gap: 12px; }

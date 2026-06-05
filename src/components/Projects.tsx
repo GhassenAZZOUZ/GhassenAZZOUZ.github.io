@@ -57,6 +57,11 @@ export default function Projects() {
                     <div className="project-tags">
                       {p.tags.map(tag => <span key={tag} className="tag">{tag}</span>)}
                     </div>
+                    {p.githubUrl && (
+                      <a href={p.githubUrl} target="_blank" rel="noopener noreferrer" className="project-github-link">
+                        View on GitHub ↗
+                      </a>
+                    )}
                   </div>
                 </div>
               </div>
