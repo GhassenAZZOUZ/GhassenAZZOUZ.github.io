@@ -1,10 +1,13 @@
 import { useEffect } from 'react'
-import Cursor from './components/Cursor'
 import Header from './components/Header'
 import Hero from './components/Hero'
 import Ticker from './components/Ticker'
 import Projects from './components/Projects'
-import About from './components/About'
+import Impact from './components/Impact'
+import Approach from './components/Approach'
+import Report from './components/Report'
+import Skills from './components/Skills'
+import Availability from './components/Availability'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
 
@@ -28,17 +31,20 @@ export default function App() {
   }, [])
 
   return (
-    <>
-      <Cursor />
+    <div className="site-wrap">
       <Header />
       <main>
         <Hero />
         <Ticker />
         <Projects />
-        <About />
+        <Impact />
+        <Approach />
+        <Report />
+        <Skills />
+        <Availability />
         <Contact />
       </main>
       <Footer />
-    </>
+    </div>
   )
 }
